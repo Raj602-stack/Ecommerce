@@ -1,0 +1,205 @@
+h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+.desc-tabs a {
+  color: black;
+}
+.desc-tabs .item1 {
+  margin-left: 135px;
+}
+
+.main-container {
+  margin-top: 50px;
+}
+
+.left-main-container {
+  margin-left: 300px;
+  width: 200px;
+  padding-right: 100px;
+}
+
+.right-main-container {
+  margin-right: 100px;
+}
+
+.stars-group {
+  /* height: 50px; */
+}
+
+.rat {
+  /* font-size: 15px; */
+}
+
+.description-text .desc {
+  font-size: 0.8em;
+  color: grey;
+}
+
+.buttons-collection {
+  margin-top: 30px;
+}
+
+.shopping {
+  color: white;
+  font-weight: bold;
+  background-color: #fd6e00;
+  border: none;
+  border-radius: 5px;
+  width: 14vw;
+  height: 3vw;
+  background-color: #f8880f;
+  margin-right: 10px;
+}
+
+.shopping:hover {
+  color: #f8880f;
+  background-color: #fff;
+  border: #f8880f solid 1px;
+}
+
+.share-on-social img {
+  margin-left: 10px;
+}
+
+.tab-content {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.tab-content p {
+  font-size: 0.8rem;
+}
+.grid-container-1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  width: 25vw;
+  height: auto;
+  display: block;
+}
+
+.progress-div span {
+  font-size: 0.8vw;
+}
+
+.progress-div {
+}
+/* .progress-bar {
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+  overflow: hidden;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #007bff;
+  transition: width 0.6s ease;
+}
+.progress-div span:first-child {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  font-size: 0.8vw;
+  color: rgb(61, 61, 255);
+}
+.progress-div span:last-child {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  font-size: 0.8vw;
+  margin-left: 0.3em;
+  color: rgb(60, 60, 255);
+} */
+
+.progress-div {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-self: center;
+  height: 1.3em;
+}
+
+.progress-div span:first-child {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  font-size: 0.8vw;
+  color: rgb(61, 61, 255);
+}
+.progress-div span:last-child {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  font-size: 0.8vw;
+  margin-left: 0.3em;
+  color: rgb(60, 60, 255);
+}
+.review-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  width: 75vw;
+  margin: 0 auto;
+}
+
+.parent {
+  position: relative;
+}
+
+/* .kid {
+    margin: auto;
+    width: 100%;
+    height: 20%;
+  
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    display: none;
+  } */
+
+/* i have changed some code try to understand and follow same for next image hover also */
+.kid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+
+  bottom: 50%;
+  top: 35%;
+  /* background-color: rgba(255, 255, 255, 0.7); */
+  height: 15%;
+  width: 100%;
+  opacity: 0;
+  z-index: -1;
+  transition: 0.1s;
+}
+
+.ro {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 90px;
+}
+
+.parent:hover .kid {
+  opacity: 1;
+  z-index: 1;
+}
+
+/* till here */
+
+.kid a {
+  font-size: 50px;
+  color: #000;
+
+  margin-left: 30px;
+  height: 50%;
+}
+.nav-item .kid a:hover {
+  color: orange;
+}
+
+.nav-item img:hover {
+  opacity: 0.2;
+}
+.nav-home {
+}

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    <header>
+      <div class="header-top top-bg">
+        <div class="container-fluid">
+          <div class="row d-flex justify-content-between align-item-center">
+            <div class="header-info-left d-flex">
+              <img
+                src="./images/india.png"
+                alt="flag"
+                id="flag"
+                height="25px"
+                width="25px"
+                style="margin-right: 3px"
+              />
+              <form action="#">
+                <select name="select" id="select1">
+                  <option value="india">India</option>
+                  <option value="usa">USA</option>
+                  <option value="uae">UAE</option>
+                  <option value="canada">CANADA</option>
+                </select>
+              </form>
+              <ul>
+                <li>
+                  <a href="" id="contact"> <span>+91 8888888888</span></a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="header-info-right">
+              <ul>
+                <li><a href="./profile.html"> My Account</a></li>
+                <li><a href=""> Wishlist</a></li>
+                <li><a href="./seller.html"> sell on website</a></li>
+                <li><a href=""> Cart</a></li>
+                <li><a href=""> Checkout</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-bottom" id="header-sticky">
+        <div class="container-fluid">
+          <div class="row align-item-center">
+            <div class="col-xl-1 col-lg-1 col-md-1 col-sm-3">
+              <a href="./index.html"><img src="./images/logo.png" alt="" /></a>
+            </div>
+            <div class="col-x1-6 col-lg-7 col-md-7 col-sm-5">
+              <div class="main-menu f-right d-none d-lg-block">
+                <nav>
+                  <ul id="navigation">
+                    <li><a href="">Home</a></li>
+                    <li>
+                      <a href="">Categories</a>
+
+                      <ul class="sub-menu">
+                        <li><a href="">Men</a></li>
+                        <li><a href="">Women</a></li>
+                        <li><a href="">Children</a></li>
+                        <li><a href="">Ethnic</a></li>
+                        <li><a href="">Winter</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="">Latest</a>
+                      <ul class="sub-menu">
+                        <li><a href="">Product List</a></li>
+                        <li><a href="">Product List</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Pages</a></li>
+                    <li><a href="">Contact</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-2 col-md-3 col-sm-3">
+              <div
+                class="header-right f-right d-none d-lg-block d-flex justify-content-between"
+              >
+                <ul>
+                  <li><i class="far fa-heart"></i></li>
+                  <div class="cart-icon">
+                    <li><i class="fas fa-shopping-cart"></i></li>
+                    <div class="cart-quantity">o</div>
+                  </div>
+
+                  <li>
+                    <button
+                      type="button"
+                      class="signIn btn btnn"
+                      data-toggle="modal"
+                      data-target="#exampleModalLong"
+                    >
+                      Sign In
+                    </button>
+                  </li>
+
+                  <!-- Modal -->
+
+                  <div
+                    class="modal fade"
+                    id="exampleModalLong"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="exampleModalLongTitle"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <div class="login-wrap">
+                            <div class="logo-image">
+                              <img
+                                src="./images/logo.png"
+                                alt="logo"
+                                width="150px"
+                                style="align-items: center"
+                                ;
+                              />
+                            </div>
+                            <div class="login-html">
+                              <input
+                                id="tab1"
+                                type="radio"
+                                name="logintab"
+                                class="sign-in"
+                                checked
+                              /><label for="tab1" class="tab">LOGIN</label>
+                              <input
+                                id="tab2"
+                                type="radio"
+                                name="logintab"
+                                class="sign-up"
+                              /><label for="tab2" class="tab">
+                                CREATE ACCOUNT</label
+                              >
+                              <div class="login-form margin-top-10">
+                                <div class="sign-in-htm">
+                                  <form id="login">
+                                    <div class="form-group">
+                                      <label
+                                        for="exampleInputEmail1"
+                                        class="required"
+                                        >Email*</label
+                                      >
+                                      <input
+                                        type="email"
+                                        class="form-control"
+                                        placeholder="Enter your email address"
+                                      />
+                                    </div>
+                                    <div class="form-group">
+                                      <label
+                                        for="exampleInputPassword1"
+                                        class="requires"
+                                        >Password*</label
+                                      >
+                                      <div class="input-group mb-3">
+                                        <input
+                                          type="text"
+                                          class="form-control"
+                                          placeholder="Enter your Password"
+                                        />
+                                        <!-- <span class="input-group-text" id ="basic-addon1"><i class="fa fa-eye field-icon></i></span> -->
+                                      </div>
+                                    </div>
+
+                                    <div class="d-grid gap-gap-2">
+                                      <button
+                                        class="btn btn-warning"
+                                        type="button"
+                                        style="width: 100%; margin-bottom: 5px"
+                                      >
+                                        SIGN IN
+                                      </button>
+                                      <button
+                                        class="btn btn-OULINE-SECONDARY"
+                                        type="button"
+                                        style="width: 100%"
+                                      >
+                                        FORGOT YOUR PASSWORD
+                                      </button>
+                                    </div>
+                                  </form>
+                                </div>
+
+                                <div class="sign-up-htm">
+                                  <form id="create">
+                                    <div class="form-group">
+                                      <label
+                                        for="exampleInputEmail1"
+                                        class="required"
+                                        >Username</label
+                                      >
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        id="exampleInputEmail1"
+                                        aria-description="emailHelp"
+                                      />
+                                    </div>
+                                    <div class="form-group">
+                                      <label
+                                        for="exampleInputEmail1"
+                                        class="required"
+                                        >Email</label
+                                      >
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        id="exampleInputEmail1"
+                                        aria-description="emailHelp"
+                                      />
+                                    </div>
+                                    <div class="form-group">
+                                      <label
+                                        for="exampleInputpassword1"
+                                        class="required"
+                                        >Password</label
+                                      >
+                                      <div class="input-group mb-3">
+                                        <input
+                                          type="text"
+                                          class="form-control"
+                                          id="exampleInputEmail1"
+                                          aria-description="emailHelp"
+                                        />
+                                        <!-- <span class="input-group-text" id ="basic-addon1"><i class="fa fa-eye field-icon></i></span> -->
+                                      </div>
+                                    </div>
+
+                                    <div class="crtbtn">
+                                      <button
+                                        class="btn btn-warning"
+                                        type="button"
+                                        style="width: 100%"
+                                      >
+                                        CREATE ACCOUNT
+                                      </button>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+
+                              <div
+                                class="d-flex justify-content-center margin-top-20"
+                              >
+                                <p>Or Login With</p>
+                              </div>
+
+                              <div
+                                class="d-flex justify-content-center margin-top-20 baap"
+                              >
+                                <ul class="social-network">
+                                  <!-- <div class="social-item"> <li><button type="button" class="btn btn-primary bon"><i
+                                                      class="fa fa-facebook "></i>Facebook</button></li></div>
+                                                    <div class="social-item"> <li><button type="button" class="btn btn-info bon"><i
+                                                      class="fa fa-twitter field-icon"></i>Twitter</button></li></div>
+                                                    <div class="social-item"><li><button type="button" class="btn btn-danger bon"><i
+                                                      class="fa fa-google field-icon"></i>Google</button></li></div> -->
+                                  <li>
+                                    <button type="button" class="btn bon">
+                                      <i
+                                        class="fa-brands fa-facebook field-icon"
+                                      ></i
+                                      >Facebook
+                                    </button>
+                                  </li>
+                                  <li>
+                                    <button type="button" class="btn bon">
+                                      <i
+                                        class="fa-brands fa-twitter field-icon"
+                                      ></i
+                                      >Twitter
+                                    </button>
+                                  </li>
+                                  <li>
+                                    <button type="button" class="btn bon">
+                                      <i
+                                        class="fa-brands fa-google field-icon"
+                                      ></i
+                                      >Google
+                                    </button>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <script src="" async defer></script>
+  </body>
+</html>

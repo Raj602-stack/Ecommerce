@@ -1,0 +1,64 @@
+.ro {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 90px;
+}
+.parent:hover .kid {
+  opacity: 1;
+  z-index: 1;
+}
+
+/* till here */
+.parent {
+  position: relative;
+  background-color: #fff;
+}
+
+.kid a {
+  font-size: 50px;
+  color: #000;
+
+  margin-left: 30px;
+  height: 50%;
+}
+.nav-item .kid a:hover {
+  color: orange;
+}
+
+.nav-item img:hover {
+  opacity: 0.2;
+}
+.kid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+
+  bottom: 50%;
+  top: 35%;
+  /* background-color: rgba(255, 255, 255, 0.7); */
+  height: 15%;
+  width: 100%;
+  opacity: 0;
+  z-index: -1;
+  transition: 0.1s;
+}
+.left-main-container {
+  margin-left: 50px;
+}
+#main .left-main-container input[type="checkbox"] + label {
+  font-size: 0.9vw;
+  color: grey;
+  margin-left: 0.3em;
+}
+#main .left-main-container input[type="radio"] + label {
+  font-size: 0.9vw;
+  color: grey;
+  margin-left: 0.3em;
+}
+/* .nav-item {
+  width: 15vw;
+}
+.widthh {
+  width: 100vw;
+} */
